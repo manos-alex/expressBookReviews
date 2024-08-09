@@ -39,7 +39,7 @@ regd_users.post("/login", (req,res) => {
       req.session.authorization = {
         accessToken, username
       }
-      return res.status(200).send(`The review for the book with ISBN 2 has been deleted`);
+      return res.status(200).send("User successfully logged in");
     } else {
       return res.status(208).json({ message: "Invalid login" });
     }

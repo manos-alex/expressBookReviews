@@ -47,7 +47,7 @@ public_users.get('/isbn/:isbn',function (req, res) {
     }).catch(function() {
       console.log("Promise get_book_isbn rejected");
     });
- });
+  });
  });
   
 // Get book details based on author
